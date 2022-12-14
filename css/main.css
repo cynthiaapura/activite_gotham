@@ -1,0 +1,129 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+html{
+    font-size: 62.5%;
+    background:linear-gradient( to top, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.6) 50%), 
+    url(../asset/cover-batman.jpg)no-repeat fixed center center / cover;
+    scroll-behavior: smooth; /*comportement de l'animation qui sera plus smooth*/
+}
+body{
+    font: 1.6rem "Montserrat", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+}
+h1,h2,h3,h4,h5,h6,
+ul,ol,p,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none; /*raccourci*/
+    color: #222;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+/* theme css */
+/* scrolar */
+
+*{
+    /* ff */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fff;
+}
+/* webkit */
+*::-webkit-scrollbar{ 
+    width: .2rem;
+}
+:root{
+    --primary-color: rgb(218, 213, 213, 1);
+    --secondary-color: #ADA9A9;
+    --main-color: rgba(255, 255, 255, .9);
+    --alternate-color: rgb(48, 47, 47);
+    --header-title: #fafafafa;
+}
+header, main{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--main-color);
+}
+header{
+    margin-top: 3rem;
+}
+header h1{
+    font-weight: 400;
+    text-transform: capitalize; /* met la première lettre en majuscule */
+    font-size: 5rem;
+}
+header h1::before{ /* :: operateur de porter specifique a before et after */
+    content: "\01F3AC";
+    vertical-align: .4rem;
+    font-size: inherit;
+}
+nav h2, section h2{
+    /* position du h2 */
+    position: sticky;
+    top: 0; 
+    left: 0;
+    text-transform: capitalize;
+    background-color: var(--header-title);
+    line-height: 6rem;
+    padding: .5rem;
+    box-shadow: 0 .4rem 0 var(--secondary-color);
+    font-weight: 300;
+}
+nav ol{
+    padding-left: 3rem;
+    list-style: decimal; 
+    margin: 1rem 0; /* haut/bas - droite/gauhce */
+    line-height: 3.5rem;
+    text-transform: uppercase; /* toutes les lettres en majuscules */
+}
+section p{
+    margin: 1rem 0;
+    text-align: justify; /* justifie le texte */
+}
+section > .section-page{ /* fonctionne aussi sans le h2 */
+    transition: all .8s .5s; /* la premiere position sert a localisé la partie que l'on veut toucher, 
+    en deuxieme durée et en troiseieme delais */
+    /* transform-origin: center; transform sert a donner d'où vient l'effet de transition */
+    /* background-origin: center; l'effet de l'arriver de la couleur */
+}
+section > .section-page:target{
+    background-color: var(--alternate-color);
+    color: #fafafafa;
+}
+footer *{
+    text-align: center;
+}
+footer > p img{ /* le > selectionne l'enfant bien précis */
+    width: inherit;
+}
+/* responsive mobile pour que ce soit bien adapté aux mobiles */
+@media screen and (max-width: 90rem) { /* selecteur speciaux discuter avec les meta-données */
+   body{
+        filter: grayscale(100%);
+    }
+    header{
+        margin-top: 0;
+    }
+    header h1{
+        font-size: 3rem;
+    }
+}
+/*@media screen and (min-width: 100rem) {
+    body{
+        filter: grayscale(0%);
+    }
+    
+}*/
