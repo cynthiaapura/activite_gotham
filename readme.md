@@ -4,7 +4,7 @@
 
 # 🗽 Gotham City
 
-[Lien vers la page](https://capura94.github.io/activite-gotham/)
+[Lien vers la page](https://cynthiaapura.github.io/activite_gotham/)
 
 ![New York](asset/vue-aerienne-new-york-city-manhattan-skyline_649448-3440.webp)
 New York officiellement City of New York, autrement connue sous les noms et abréviations de New York City ou NYC, est la plus grande ville des États-Unis et l'une des plus importantes du continent américain. Elle se situe dans le Nord-Est des États-Unis, sur la côte atlantique, à l'extrémité sud-est de l'État de New York. 
