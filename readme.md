@@ -12,8 +12,6 @@ New York officiellement City of New York, autrement connue sous les noms et abr√
 [//]:# (Pour noter un lien - le chevron sert a mettre une fond gris derriere le lien)
 
 
-[Lien vers la doc](https://drive.google.com/drive/my-drive)
-
 
 ## contenu des liens
 [//]: # (les * servent a faire une liste a puce)
